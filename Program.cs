@@ -33,10 +33,8 @@ namespace Lesson_2_2
                 users[2, 1] = Console.ReadLine();
 
                 Console.WriteLine("Какого пользователя вы хотите запросить? (1,2,3)?");
-
-
-
-
+                int number = int.Parse(Console.ReadLine());
+                Console.WriteLine($"{users[number - 1,0]} {users[number - 1,1]}");
 
             }
             catch (NullReferenceException ex)
